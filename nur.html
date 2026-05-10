@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Нурай</title>
+
+  <!-- ТУУРА Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    /* ===== NAV ===== */
+    nav {
+      background: #010f1e;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      color: white;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #dff0ff;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      margin-top: 80px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #1f5b5f, #132743);
+      color: white;
+      text-align: center;
+    }
+
+    /* ===== SECTION ===== */
+    section {
+      opacity: 0.3;
+      transition: 0.5s;
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .about, .projects, .contacts {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    /* ===== КАРТОЧКИ ===== */
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #152a39;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h1>Нурайская </h1>
+  <ul>
+    <li><a href="glavn.html">Главная</a></li>
+    <li><a href="#about">Планеты</a></li>
+    <li><a href="#projects">Проекты</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER -->
+<header id="home">
+  <h2>«Изучая планеты, мы изучаем себя.»</h2>
+  <p>💙</p>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>Планеты</h2>
+  <p>Планета — это небесное тело, которое вращается вокруг Солнца</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2>8 планет Солнечной системы</h2>
+
+  <div class="project-list">
+
+    <!-- ПЛАНЕТА -->
+    <div class="card">
+      <h3>Меркурий</h3>
+      <img src="https://vishime.ru/upload/iblock/7a8/bg7q2rz8t1lxb1vwf2rqoa4rhynfnw7x.png">
+      <p>Самая маленькая планета</p>
+      <button class="btn btn-outline-primary">⭐⭐⭐⭐⭐</button>
+    </div>
+
+    <div class="card">
+      <h3>Венера</h3>
+      <img src="https://starwalk.space/gallery/images/venus-atmosphere/1920x1080.jpg">
+      <p>Плотная атмосфера</p>
+      <button class="btn btn-outline-primary">⭐⭐⭐⭐⭐</button>
+    </div>
+
+    <div class="card">
+      <h3>Земля</h3>
+      <img src="https://focus.ua/static/storage/originals/b/b6/3e865e987993cdd5321938485c5b8b6b.jpg">
+      <p>Есть жизнь</p>
+      <button class="btn btn-outline-primary">⭐⭐⭐⭐⭐</button>
+    </div>
+
+    <div class="card">
+      <h3>Марс</h3>
+      <img src="https://maxpolyakov.com/wp-content/uploads/2023/11/mysteries-of-the-fourth-planet.jpg">
+      <p>Красная планета</p>
+      <button class="btn btn-outline-primary">⭐⭐⭐⭐⭐</button>
+    </div>
+
+    <div class="card">
+      <h3>Юпитер</h3>
+      <img src="https://resizer.mail.ru/p/3dc7c16f-1a14-5be9-a88c-17026075c6e6/AQA4bFd7CAySrJYWQp3j57ldl9qnVxajpphqNkM56Ohc5kbQvV_OxJiACEfjG4UKb8YjR15omv3_sJgxCgegMnn4gCc.jpg">
+      <p>Самая большая</p>
+      <button class="btn btn-outline-primary">⭐⭐⭐⭐⭐</button>
+    </div>
+
+    <div class="card">
+      <h3>Сатурн</h3>
+      <img src="https://starwalk.space/gallery/images/saturn-planet-guide/1920x1080.jpg">
+      <p>Кольца</p>
+      <button class="btn btn-outline-primary">⭐⭐⭐⭐⭐</button>
+    </div>
+
+    <div class="card">
+      <h3>Уран</h3>
+      <img src="https://news.store.rambler.ru/img/04d3230ed7e62ba29f82c0b6881d6f1a">
+      <p>Голубой</p>
+      <button class="btn btn-outline-primary">⭐⭐⭐⭐⭐</button>
+    </div>
+
+    <div class="card">
+      <h3>Нептун</h3>
+      <img src="https://focus.ua/static/storage/thumbs/920x465/e/8c/2z6hej-b002e2661a3e431969c4fc780a0d48ce.jpeg">
+      <p>Самый дальний</p>
+      <button class="btn btn-outline-primary">⭐⭐⭐⭐⭐</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" class="contacts">
+  <h2>Контакты</h2>
+  <p>Email: example@gmail.com</p>
+  <p>Instagram: @abd1kdyrova_</p>
+</section>
+
+<footer>©️ 2026 Нурай</footer>
+
+<!-- JS -->
+<script>
+  const sections = document.querySelectorAll("section");
+
+  window.addEventListener("scroll", () => {
+    const trigger = window.innerHeight * 0.85;
+
+    sections.forEach(sec => {
+      const top = sec.getBoundingClientRect().top;
+      if (top < trigger) {
+        sec.style.opacity = 1;
+      } else {
+        sec.style.opacity = 0.3;
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

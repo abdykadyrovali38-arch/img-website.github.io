@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Космос: Планеты</title>
+
+  <!-- Подключаем красивые шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: radial-gradient(circle, #0b1a2a, #000);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* 🌌 Звезды на фоне */
+    .stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: url("https://www.transparenttextures.com/patterns/stardust.png");
+      animation: moveStars 50s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes moveStars {
+      from {background-position: 0 0;}
+      to {background-position: 1000px 1000px;}
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      background: #00bcd4;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .btn:hover {
+      background: #0097a7;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .card h3 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .back-btn {
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+<div class="stars"></div>
+
+<!-- HEADER -->
+<header>
+  <h1>Главная</h1>
+  <p>Узнайте интересные факты о каждой планете Солнечной системы</p>
+  <a href="#planets" class="btn">Начать 🚀</a>
+</header>
+
+<!-- ПЛАНЕТЫ -->
+<section id="planets">
+  <h2>🪐 Интересные факты о планетах</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Меркурий</h3>
+      <p>Самая маленькая планета, ближайшая к Солнцу. Орбита — 88 дней, сутки — 58 дней.</p>
+    </div>
+
+    <div class="card">
+      <h3>Венера</h3>
+      <p>“Вечерняя звезда”, самая горячая планета до 470°C. Атмосфера состоит из CO₂.</p>
+    </div>
+
+    <div class="card">
+      <h3>Земля</h3>
+      <p>Единственная планета с жизнью. Содержит воду, атмосферу и биосферу.</p>
+    </div>
+
+    <div class="card">
+      <h3>Марс</h3>
+      <p>Красная планета. Температура от -125°C до +20°C. Есть признаки воды.</p>
+    </div>
+
+    <div class="card">
+      <h3>Юпитер</h3>
+      <p>Самая большая планета, газовый гигант. Имеет 79 спутников, включая Ганимед.</p>
+    </div>
+
+    <div class="card">
+      <h3>Сатурн</h3>
+      <p>Газовый гигант со знаменитыми кольцами из льда и камней. 62 спутника.</p>
+    </div>
+
+    <div class="card">
+      <h3>Уран</h3>
+      <p>Голубовато-зеленая планета с наклоном оси почти 98°. Атмосфера содержит метан.</p>
+    </div>
+
+    <div class="card">
+      <h3>Нептун</h3>
+      <p>Далёкая ледяная планета с сильными ветрами до 2000 км/ч. Атмосфера содержит метан.</p>
+    </div>
+  </div>
+
+  <!-- Назад -->
+  <a href="nur.html" class="btn back-btn">⬅️ Назад</a>
+</section>
+
+<footer>
+  © 2026 Космос: Планеты
+</footer>
+</body>
+</html>
